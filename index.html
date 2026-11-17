@@ -12,10 +12,10 @@
     background: #f4ede4; color: #3b2a20; padding: 20px;
   }
   .card {
-    background: #fffaf4; width: 100%; max-width: 440px; padding: 32px 28px;
+    background: #fff; width: 100%; max-width: 440px; padding: 32px 28px;
     border-radius: 16px; box-shadow: 0 8px 30px rgba(59, 42, 32, .12);
   }
-  h1 { margin: 0 0 4px; text-align: center; font-size: 2rem; }
+  .logo { display: block; width: 100%; height: auto; margin: 0 0 16px; }
   .sub { text-align: center; margin: 0 0 28px; color: #7a5c48; font-style: italic; }
   label { display: block; font-weight: bold; margin: 20px 0 8px; }
   input[type=text], textarea {
@@ -25,21 +25,21 @@
   textarea { min-height: 110px; resize: vertical; }
   .stars { display: flex; flex-direction: row-reverse; justify-content: center; gap: 6px; }
   .stars input { display: none; }
-  .stars label { margin: 0; font-size: 2.6rem; color: #d8c6b5; cursor: pointer; font-weight: normal; }
+  .stars label { margin: 0; font-size: 2.6rem; color: #e4ddd5; cursor: pointer; font-weight: normal; }
   .stars input:checked ~ label,
-  .stars label:hover, .stars label:hover ~ label { color: #c8902e; }
+  .stars label:hover, .stars label:hover ~ label { color: #CB2119; }
   button {
     margin-top: 28px; width: 100%; padding: 14px; font: inherit; font-size: 1.1rem;
-    background: #6b4226; color: #fff; border: 0; border-radius: 10px; cursor: pointer;
+    background: #CB2119; color: #fff; border: 0; border-radius: 10px; cursor: pointer;
   }
-  button:hover { background: #54331d; }
+  button:hover { background: #a81a13; }
   .thanks { display: none; text-align: center; }
   .thanks.show { display: block; }
 </style>
 </head>
 <body>
 <div class="card">
-  <h1>Café & Graça</h1>
+  <img class="logo" src="logo.png" alt="Café & Graça — Saciando o corpo e a alma">
   <p class="sub">Conte-nos como foi seu atendimento</p>
 
   <form id="form" action="https://formsubmit.co/joshcamgoossen@gmail.com" method="POST">
